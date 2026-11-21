@@ -1,3 +1,4 @@
+export const instant = false;
 import { connection } from "next/server";
 import { prisma } from "@/lib/prisma";
 
