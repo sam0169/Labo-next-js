@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic";
+import { connection } from "next/server";
 import { prisma } from "@/lib/prisma";
 
 import {
@@ -10,6 +10,7 @@ import {
 
 
 export default async function GestionPage() {
+  await connection();
 
   // ==========================
   // READ FORMATIONS
